@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import OrderProducer from './components/OrderProducer';
 import OrderReceiver from './components/OrderReceiver';

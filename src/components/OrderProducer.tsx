@@ -1,17 +1,16 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import API_URL from "../config";
 
 const OrderProducer: React.FC = () => {
     const [message, setMessage] = useState("");
-    const [name, setName] = useState("");
 
     const onButtonClick = () => {
      
         axios.get(`${API_URL}api/orders`, {
             params: { message: message }
         })
-            .then(res => setName(res.data))
+            .then(res => console.log("Order added"))
             .catch(err => console.error(err));
     }
 
