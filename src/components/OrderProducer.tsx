@@ -18,7 +18,7 @@ const OrderProducer: React.FC = () => {
         <h2>Place Order</h2>
         <hr />       
         <input onChange={(e)=> setMessage(e.target.value)} type="text" value={message} />
-        <button className="mx-2" onClick={onButtonClick} >Submit</button>
+        <button className="mx-2 btn btn-success" onClick={onButtonClick} >Submit</button>
     </div>)
 }
 

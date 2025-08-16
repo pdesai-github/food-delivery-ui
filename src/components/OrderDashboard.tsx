@@ -28,7 +28,7 @@ const OrderDashboard: React.FC = () => {
         </div>
         <hr />
         <div>
-            <button onClick={onRefreshClick}>Refresh</button>
+            <button className="btn btn-success" onClick={onRefreshClick}>Refresh</button>
         </div>
         <hr />
         <div>

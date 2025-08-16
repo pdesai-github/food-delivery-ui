@@ -33,7 +33,7 @@ const OrderDLQProcessor: React.FC = () => {
                         dlqMessages.map(m => (
                             <div className="d-flex flex-row">
                                 <div>{m.body}</div>
-                                <div><button onClick={() => onRedrive(m.body)}>Re-Drive</button></div>
+                                <div><button className="btn btn-success" onClick={() => onRedrive(m.body)}>Re-Drive</button></div>
                             </div>
                         ))
                     }

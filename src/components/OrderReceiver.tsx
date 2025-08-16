@@ -48,7 +48,7 @@ const OrderReceiver: React.FC = () => {
                                 <td>{msg.body}</td>
 
                                 <td>
-                                    <button onClick={() => deleteMessage(msg.receiptHandle)}>Delete</button>
+                                    <button className="btn btn-success" onClick={() => deleteMessage(msg.receiptHandle)}>Delete</button>
                                 </td>
                             </tr>
                         ))}
